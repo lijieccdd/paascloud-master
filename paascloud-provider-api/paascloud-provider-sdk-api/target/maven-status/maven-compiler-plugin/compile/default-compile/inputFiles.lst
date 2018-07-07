@@ -1,0 +1,15 @@
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\model\enums\MqOrderTypeEnum.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\service\MqMessageService.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\annotation\MqConsumerStore.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\mapper\MqMessageDataMapper.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\aspect\MqConsumerStoreAspect.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\annotation\MqProducerStore.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\autoconfigure\MessageAutoConfiguration.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\model\enums\DelayLevelEnum.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\model\enums\MqSendTypeEnum.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\autoconfigure\MessageBeanConfiguration.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\model\dto\UpdateAttachmentDto.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\service\impl\MqMessageServiceImpl.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\model\enums\MqMessageTypeEnum.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\aspect\MqProducerStoreAspect.java
+E:\project\personal\paascloud-master\paascloud-provider-api\paascloud-provider-sdk-api\src\main\java\com\paascloud\provider\model\domain\MqMessageData.java

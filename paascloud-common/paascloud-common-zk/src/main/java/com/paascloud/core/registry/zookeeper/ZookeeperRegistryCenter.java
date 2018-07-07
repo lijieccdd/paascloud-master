@@ -284,7 +284,7 @@ public final class ZookeeperRegistryCenter implements CoordinatorRegistryCenter 
 	@Override
 	public void update(final String key, final String value) {
 		try {
-			client.inTransaction().check().forPath(key).and().setData().forPath(key, value.getBytes(Charsets.UTF_8)).and().commit();
+			client.setData().forPath(key, value.getBytes(Charsets.UTF_8));
 			//CHECKSTYLE:OFF
 		} catch (final Exception ex) {
 			//CHECKSTYLE:ON

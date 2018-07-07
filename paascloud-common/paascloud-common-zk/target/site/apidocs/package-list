@@ -1,0 +1,5 @@
+com.paascloud.core.generator
+com.paascloud.core.registry
+com.paascloud.core.registry.base
+com.paascloud.core.registry.exception
+com.paascloud.core.registry.zookeeper

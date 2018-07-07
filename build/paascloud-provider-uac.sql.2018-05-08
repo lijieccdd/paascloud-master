@@ -1,0 +1,28 @@
+2018-05-08 16:20:29.325 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-==>  Preparing: SELECT COUNT(id) FROM pc_uac_user WHERE login_name = ? 
+2018-05-08 16:20:29.341 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-==> Parameters: lijieccdd(String)
+2018-05-08 16:20:29.402 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-<==      Total: 1
+2018-05-08 16:20:29.403 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-==>  Preparing: SELECT COUNT(id) FROM pc_uac_user WHERE mobile_no = ? 
+2018-05-08 16:20:29.404 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-==> Parameters: 18665531740(String)
+2018-05-08 16:20:29.455 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-<==      Total: 1
+2018-05-08 16:20:29.457 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-==>  Preparing: SELECT COUNT(id) FROM pc_uac_user WHERE email = ? 
+2018-05-08 16:20:29.457 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-==> Parameters: 279071978@qq.com(String)
+2018-05-08 16:20:29.504 [http-nio-8000-exec-3] DEBUG c.p.p.m.UacUserMapper.selectCount-<==      Total: 1
+2018-05-08 16:20:29.724 [http-nio-8000-exec-3] DEBUG c.p.p.m.M.insertSelective-==>  Preparing: INSERT INTO pc_mq_message_data ( id,message_key,message_topic,message_tag,message_body,message_type,order_type,delay_level ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-05-08 16:20:29.726 [http-nio-8000-exec-3] DEBUG c.p.p.m.M.insertSelective-==> Parameters: 357083159218619392(Long), SEND_EMAIL_TOPIC_ACTIVE_USER_[279071978@qq.com]--1675579325(String), SEND_EMAIL_TOPIC(String), ACTIVE_USER(String), {"subject":"注册用户-等待激活用户","text":"<html>\n<body>\n<h3>尊敬的,  lijieccdd, 您好!</h3>\n\n感谢您注册快乐学习网，点击下面按钮以验证你的电子邮箱\n\n<a href=\"http://dev-api.paascloud.net:7979/uac/auth/activeUser/6a224de7f7d045988d191e36306178df357083158044214272\">验证电子邮箱</a>\n\n如果你无法通过上面按钮验证电子邮箱，请点击下面的链接或者把它复制到浏览器地址栏。\n\nhttp://dev-api.paascloud.net:7979/uac/auth/activeUser/6a224de7f7d045988d191e36306178df357083158044214272\n\n\n欢迎您使用paascloud快乐学习网, 祝您生活愉快.\n\n如果您有任何问题或建议, 请发送邮件到：paascloud.net@gmail.com\n\npaascloud.net\n2018-05-08 16:20:29\n\n</body>\n</html>","to":["279071978@qq.com"]}(String), 10(Integer), 1(Integer), 0(Integer)
+2018-05-08 16:20:29.772 [http-nio-8000-exec-3] DEBUG c.p.p.m.M.insertSelective-<==    Updates: 1
+2018-05-08 16:20:29.775 [http-nio-8000-exec-3] DEBUG c.p.p.m.M.insertSelective!selectKey-==>  Executing: SELECT LAST_INSERT_ID() 
+2018-05-08 16:20:29.819 [http-nio-8000-exec-3] DEBUG c.p.p.m.M.insertSelective!selectKey-<==      Total: 1
+2018-05-08 17:15:02.005 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-==>  Preparing: SELECT COUNT(id) FROM pc_uac_user WHERE login_name = ? 
+2018-05-08 17:15:02.025 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-==> Parameters: 18665531740(String)
+2018-05-08 17:15:02.076 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-<==      Total: 1
+2018-05-08 17:15:02.077 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-==>  Preparing: SELECT COUNT(id) FROM pc_uac_user WHERE mobile_no = ? 
+2018-05-08 17:15:02.077 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-==> Parameters: 18665531740(String)
+2018-05-08 17:15:02.117 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-<==      Total: 1
+2018-05-08 17:15:02.118 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-==>  Preparing: SELECT COUNT(id) FROM pc_uac_user WHERE email = ? 
+2018-05-08 17:15:02.118 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-==> Parameters: 279071878@qq.com(String)
+2018-05-08 17:15:02.164 [http-nio-8000-exec-8] DEBUG c.p.p.m.UacUserMapper.selectCount-<==      Total: 1
+2018-05-08 17:15:02.380 [http-nio-8000-exec-8] DEBUG c.p.p.m.M.insertSelective-==>  Preparing: INSERT INTO pc_mq_message_data ( id,message_key,message_topic,message_tag,message_body,message_type,order_type,delay_level ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-05-08 17:15:02.383 [http-nio-8000-exec-8] DEBUG c.p.p.m.M.insertSelective-==> Parameters: 357110612246922240(Long), SEND_EMAIL_TOPIC_ACTIVE_USER_[279071878@qq.com]-1169470813(String), SEND_EMAIL_TOPIC(String), ACTIVE_USER(String), {"subject":"注册用户-等待激活用户","text":"<html>\n<body>\n<h3>尊敬的,  18665531740, 您好!</h3>\n\n感谢您注册快乐学习网，点击下面按钮以验证你的电子邮箱\n\n<a href=\"http://dev-api.paascloud.net:7979/uac/auth/activeUser/f17584a7fdc1487ca20733d9835a4f2c357110611089294336\">验证电子邮箱</a>\n\n如果你无法通过上面按钮验证电子邮箱，请点击下面的链接或者把它复制到浏览器地址栏。\n\nhttp://dev-api.paascloud.net:7979/uac/auth/activeUser/f17584a7fdc1487ca20733d9835a4f2c357110611089294336\n\n\n欢迎您使用paascloud快乐学习网, 祝您生活愉快.\n\n如果您有任何问题或建议, 请发送邮件到：paascloud.net@gmail.com\n\npaascloud.net\n2018-05-08 17:15:02\n\n</body>\n</html>","to":["279071878@qq.com"]}(String), 10(Integer), 1(Integer), 0(Integer)
+2018-05-08 17:15:02.425 [http-nio-8000-exec-8] DEBUG c.p.p.m.M.insertSelective-<==    Updates: 1
+2018-05-08 17:15:02.429 [http-nio-8000-exec-8] DEBUG c.p.p.m.M.insertSelective!selectKey-==>  Executing: SELECT LAST_INSERT_ID() 
+2018-05-08 17:15:02.472 [http-nio-8000-exec-8] DEBUG c.p.p.m.M.insertSelective!selectKey-<==      Total: 1

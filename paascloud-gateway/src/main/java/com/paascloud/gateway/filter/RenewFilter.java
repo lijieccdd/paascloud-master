@@ -30,6 +30,10 @@ public class RenewFilter extends ZuulFilter {
 
 	/**
 	 * Filter type string.
+	 * 	pre：可以在请求被路由之前调用
+	 * 	route：在路由请求时候被调用
+	 * 	post：在route和error过滤器之后被调用
+	 * 	error：处理请求时发生错误时被调用
 	 *
 	 * @return the string
 	 */
@@ -39,7 +43,7 @@ public class RenewFilter extends ZuulFilter {
 	}
 
 	/**
-	 * Filter order int.
+	 * Filter order int. 优先级为10，数字越大，优先级越低
 	 *
 	 * @return the int
 	 */
@@ -49,7 +53,7 @@ public class RenewFilter extends ZuulFilter {
 	}
 
 	/**
-	 * Should filter boolean.
+	 * Should filter boolean. 是否执行该过滤器，此处为true，说明需要过滤
 	 *
 	 * @return the boolean
 	 */

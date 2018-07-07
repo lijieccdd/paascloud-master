@@ -31,7 +31,7 @@ public class AuthHeaderFilter extends ZuulFilter {
 
 
 	/**
-	 * Filter type string.
+	 * Filter type string. 前置过滤器
 	 *
 	 * @return the string
 	 */
