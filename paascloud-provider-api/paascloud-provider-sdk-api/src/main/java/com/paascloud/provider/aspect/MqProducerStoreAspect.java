@@ -1,3 +1,14 @@
+/*
+ * Copyright (c) 2018. paascloud.net All Rights Reserved.
+ * 项目名称：paascloud快速搭建企业级分布式微服务平台
+ * 类名称：MqProducerStoreAspect.java
+ * 创建人：刘兆明
+ * 联系方式：paascloud.net@gmail.com
+ * 开源地址: https://github.com/paascloud
+ * 博客地址: http://blog.paascloud.net
+ * 项目官网: http://paascloud.net
+ */
+
 package com.paascloud.provider.aspect;
 
 import com.paascloud.base.enums.ErrorCodeEnum;
@@ -15,6 +26,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.task.TaskExecutor;
 
 import javax.annotation.Resource;
 import java.lang.reflect.Method;
@@ -30,8 +42,12 @@ import java.lang.reflect.Method;
 public class MqProducerStoreAspect {
 	@Resource
 	private MqMessageService mqMessageService;
+
 	@Value("${paascloud.aliyun.rocketMq.producerGroup}")
 	private String producerGroup;
+
+	@Resource
+	private TaskExecutor taskExecutor;
 
 	/**
 	 * Add exe time annotation pointcut.
@@ -86,7 +102,8 @@ public class MqProducerStoreAspect {
 		} else if (type == MqSendTypeEnum.DIRECT_SEND) {
 			mqMessageService.directSendMessage(domain);
 		} else {
-			mqMessageService.confirmAndSendMessage(domain.getMessageKey());
+			final MqMessageData finalDomain = domain;
+			taskExecutor.execute(() -> mqMessageService.confirmAndSendMessage(finalDomain.getMessageKey()));
 		}
 		return result;
 	}
